@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+  <header class="text-gray-600 body-font shadow-md">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="../index.html">
+        <span class="ml-3 text-xl">Home</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        <div class="text-center lg:w-2/3 w-full">
+          <!-- Task Name -->
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Calculator</h1>
+          <!-- Description -->
+          <p class="mb-8">
+            Write your own calculator
+          </p>
+          <!-- Requirements -->
+          <p class="mb-8 text-left">
+            <strong>Requirements:</strong>
+            all standards of calculator should be implemented, and show on display
+          </p>
+          <!-- Advice -->
+          <!-- <p class="mb-8">
+            <strong>Advice:</strong>
+            Meggings kinfolk echo park stumptown DIY, kale chips
+            beard jianbing tousled.
+            pitchfork.
+          </p> -->
+        </div>
+        <div
+          class="p-4 lg:w-3/6 md:w-3/6 w-5/6 min-h-[120px] mt-10 object-cover object-center rounded border-2 border-black bg-opacity-40 bg-yellow-400 flex flex-col items-start">
+          <!-- TASK GOES HERE -->
+          <div class="bg-gray-800 border-2 border-gray-900 shadow-2xl rounded-lg">
+            <!-- form goes here -->
+            <form class="border-b-2 border-gray-900">
+              <input type="number"
+                class="bg-transparent p-8 rounded-t-lg outline-none text-3xl text-right text-white font-mono focus:bg-transparent focus:text-inherit">
+            </form>
+
+            <!-- buttons go here -->
+            <div class="p-6 text-gray-800 grid grid-cols-4 gap-4 text-xl">
+              <button class="font-mono col-span-3 bg-blue-500 hover:bg-blue-400 rounded-full p-5">C</button>
+              <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&divide;</button>
+
+              <button class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5">1</button>
+              <button class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5">2</button>
+              <button class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5">3</button>
+              <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&times;</button>
+
+              <button class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5">4</button>
+              <button class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5">5</button>
+              <button class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5">6</button>
+              <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&minus;</button>
+
+              <button class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5">7</button>
+              <button class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5">8</button>
+              <button class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5">9</button>
+              <button class="font-mono bg-purple-500 hover:bg-purple-400 rounded-full p-5">&plus;</button>
+
+              <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-full p-5">0</button>
+              <button class="font-mono col-span-3 bg-purple-500 hover:bg-purple-400 rounded-full p-5">&equals;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
