@@ -1,2 +1,4 @@
-.some {
+.js-class-task::before {
+  content: "has class";
+  font: bold;
 }
