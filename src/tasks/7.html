@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+  <header class="text-gray-600 body-font shadow-md">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="../index.html">
+        <span class="ml-3 text-xl">Home</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        <div class="text-center lg:w-2/3 w-full">
+          <!-- Task Name -->
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Form submit</h1>
+          <!-- Description -->
+          <p class="mb-8">
+            Work with form submit
+          </p>
+          <!-- Requirements -->
+          <p class="mb-8 text-left">
+            <strong>Requirements:</strong>
+            When you submit the form (on submit event), page should't reload.
+            When you submit the form, in console should situated data from all fields (in object)
+            all field should be required (by js, not by html), if any field is empty, form should not be submitted
+          </p>
+          <!-- Advice -->
+          <p class="mb-8">
+            <strong>Advice:</strong>
+            add event listener to form, not to button.
+            use <code>event.preventDefault()</code> to prevent page reload
+            use <code>trim</code> method on string to remove whitespaces before and after string (for more info check
+            mdn)
+          </p>
+        </div>
+        <div
+          class="p-4 lg:w-2/6 md:w-3/6 w-5/6 min-h-[120px] mt-10 object-cover object-center rounded border-2 border-black bg-opacity-40 bg-yellow-400 flex flex-col items-start">
+          <!-- TASK GOES HERE -->
+          <form>
+            <input type="text" name="name" placeholder="Enter your name">
+            <input type="text" name="second-name" placeholder="Enter your second name" class="mt-4">
+            <input type="tel" name="tel" placeholder="Enter your tel" class="mt-4">
+            <input type="email" name="mail" placeholder="Enter your mail" class="mt-4">
+            <input type="number" name="age" placeholder="Enter your age" class="mt-4">
+            <button type="submit" class="mt-4">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
