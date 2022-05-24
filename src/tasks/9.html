@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+  <header class="text-gray-600 body-font shadow-md">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="../index.html">
+        <span class="ml-3 text-xl">Home</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        <div class="text-center lg:w-2/3 w-full">
+          <!-- Task Name -->
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Splitting Words</h1>
+          <!-- Description -->
+          <p class="mb-8">
+            when you type something in textarea, it should be splitted to words by "," and added to page to
+            <code>ul</code>.
+          </p>
+          <pre class="text-left mb-4">
+  &lt;li class="py-1 px-3 border rounded-full"&gt;{content}&lt;/li&gt;
+          </pre>
+          <!-- Requirements -->
+          <p class="mb-8 text-left">
+            <strong>Requirements:</strong>
+            when you write sentence without ',' it should be in one <code>li</code> element, but when you add ',' it
+            should be in separate <code>li</code> elements.
+          </p>
+          <!-- Advice -->
+          <p class="mb-8">
+            <strong>Advice:</strong>
+            read about <code>split</code> method in mdn
+          </p>
+        </div>
+        <div
+          class="p-4 lg:w-2/6 md:w-3/6 w-5/6 min-h-[120px] mt-10 object-cover object-center rounded border-2 border-black bg-opacity-40 bg-yellow-400 flex flex-col items-start">
+          <!-- TASK GOES HERE -->
+          <textarea class="m-auto w-full" id="textarea" rows="5" placeholder="Type Here"></textarea>
+          <ul class="mt-4 flex gap-2 flex-wrap"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
