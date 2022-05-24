@@ -23,33 +23,41 @@
       <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
         <div class="text-center lg:w-2/3 w-full">
           <!-- Task Name -->
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Splitting Words</h1>
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Toasts</h1>
           <!-- Description -->
           <p class="mb-8">
-            when you type something in textarea, it should be splitted to words by "," and added to page to
-            <code>ul</code>.
+            Int this task you will work with adding elements to page, and timeouts
           </p>
-          <pre class="text-left mb-4">
-  code of element
-  &lt;li class="py-1 px-3 border rounded-full"&gt;{content}&lt;/li&gt;
-          </pre>
           <!-- Requirements -->
           <p class="mb-8 text-left">
             <strong>Requirements:</strong>
-            when you write sentence without ',' it should be in one <code>li</code> element, but when you add ',' it
-            should be in separate <code>li</code> elements.
+            when you click button, toast should be added to page (<code>ul</code> tag), and after 3 seconds it should be
+            removed
           </p>
           <!-- Advice -->
           <p class="mb-8">
             <strong>Advice:</strong>
-            read about <code>split</code> method in mdn
+            You should use <code>setTimeout</code> or <code>setInterval</code>
+            read about this functions on mdn.
+            You can use bout's methods, just add new button and add functionality on click
           </p>
+          <pre>
+code of element
+
+&lt;li class="toast" role="alert"&gt;
+  &lt;span class="text-sm font-normal"&gt;Toast Notification&lt;/span&gt;
+&lt;/li&gt;
+          </pre>
         </div>
         <div
           class="p-4 lg:w-2/6 md:w-3/6 w-5/6 min-h-[120px] mt-10 object-cover object-center rounded border-2 border-black bg-opacity-40 bg-yellow-400 flex flex-col items-start">
           <!-- TASK GOES HERE -->
-          <textarea class="m-auto w-full" id="textarea" rows="5" placeholder="Type Here"></textarea>
-          <ul class="mt-4 flex gap-2 flex-wrap"></ul>
+          <div class="flex flex-wrap gap-3 m-auto">
+            <button type="button">Notification</button>
+          </div>
+          <ul class="fixed bottom-4 right-4">
+            <!-- add elements here -->
+          </ul>
         </div>
       </div>
     </section>
