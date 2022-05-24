@@ -8,7 +8,7 @@
   }
 
   ol {
-    @apply list-decimal pl-4;
+    @apply list-decimal pl-4 text-left;
   }
 
   p {

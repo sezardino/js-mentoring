@@ -23,22 +23,25 @@
       <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
         <div class="text-center lg:w-2/3 w-full">
           <!-- Task Name -->
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Microdosing synth tattooed
-            vexillologist</h1>
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Style Attribute</h1>
           <!-- Description -->
-          <!-- <p class="mb-8">
-            Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled.
-            Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde
-            chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan photo booth af
-            fingerstache
-            pitchfork.
-          </p> -->
+          <p class="mb-8">
+            You have 3 buttons, each one have different functionality, what effect box.
+          </p>
+          <h2 class="text-left">Buttons:</h2>
+          <ol class="mb-8">
+            <li>Rotate box to left by 90 deg</li>
+            <li>Change color of the box (toggle white color with black)</li>
+            <li>Rotate box to right by 90 deg</li>
+          </ol>
+
           <!-- Requirements -->
-          <!-- <p class="mb-8 text-left">
+          <p class="mb-8 text-left">
             <strong>Requirements:</strong>
-            if you wont to found elements by className, you should add your own class (f.e. <code>js-title</code>),
-            because someone can delete simple className (f.e. <code>title</code>) when refactor/rebase the code.
-          </p> -->
+            when click rotate button more then 1 time, box should rotate smoothly, no "jumping" (first click 90deg,
+            second 180...)
+            when click color toggle button, color of the box should be toggled (white to black, black to white)
+          </p>
           <!-- Advice -->
           <!-- <p class="mb-8">
             <strong>Advice:</strong>
@@ -50,6 +53,12 @@
         <div
           class="p-4 lg:w-2/6 md:w-3/6 w-5/6 min-h-[120px] mt-10 object-cover object-center rounded border-2 border-black bg-opacity-40 bg-yellow-400 flex flex-col items-start">
           <!-- TASK GOES HERE -->
+          <div class="flex gap-2">
+            <button>Rotate Left</button>
+            <button>Toggle Color</button>
+            <button>Rotate Right</button>
+          </div>
+          <div class="mt-5 w-12 h-12 bg-black self-center transition-all"></div>
         </div>
       </div>
     </section>
